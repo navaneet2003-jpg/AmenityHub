@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Google Maps Search</title>
+  <style>
+    /* Center align body content */
+    body {
+      display: flex;
+      justify-content: center; /* Center content horizontally */
+      align-items: center; /* Center content vertically */
+      height: 100vh; /* Set the height to the full viewport height */
+      margin: 0; /* Remove default margin */
+      padding: 0; /* Remove default padding */
+      background-image:url('images.jpeg');/* Add background image */
+      background-size: cover; /* Cover the entire background */
+    
+    }
+
+    /* Add styles for the search button */
+    button[type="submit"] {
+      background-color: green; /* Set background color to green */
+      border-radius: 0 10% 10% 0; /* Set border radius for right side */
+      color: white; /* Set text color to white */
+      padding: 10px 20px; /* Add padding */
+      border: none; /* Remove border */
+      cursor: pointer; /* Change cursor to pointer */
+    } /* Add hover effect for the search button */
+    button[type="submit"]:hover {
+      background-color: darkgreen; /* Darken background color on hover */
+    }
+
+    /* Add styles for the text field */
+    input[type="text"] {
+      border-radius: 10% 0 0 10%; /* Set border radius for left side */
+      padding: 10px; /* Add padding */
+      border: 1px solid #ccc; /* Add border */
+      width: 400px; /* Set width */
+      box-sizing: border-box; /* Include padding and border in element's total width and height */
+    }
+
+    /* Add styles for the heading */
+    h1 {
+      text-align: center; /* Center align the heading */
+      color: rgb(15, 15, 15); /* Set text color to white */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
+      text-size-adjust: 50px;
+    }
+
+    /* Add styles for the form */
+    form {
+      text-align: center; /* Center align form elements */
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>Explore Eateries and Healing Hubs</h1>
+    <form id="city-form" action="/" method="post">
+      <input type="text" id="city" name="city" placeholder="Enter the city">
+      <button type="submit">Search</button>
+    </form>
+    <div id="location"></div>
+  </div>
+</body>
+</html>
